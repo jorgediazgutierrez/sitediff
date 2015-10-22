@@ -32,7 +32,11 @@ class SiteDiff
     end
 
     def css
-      File.read(File.join(SiteDiff::FILES_DIR, 'sitediff.css'))
+      File.read(File.join(SiteDiff::FILES_DIR, 'css/sitediff.css'))
+    end
+
+    def bootstrap
+      File.read(File.join(SiteDiff::FILES_DIR, 'css/bootstrap.min.css'))
     end
   end
 end
